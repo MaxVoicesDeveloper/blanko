@@ -8,16 +8,18 @@
 html,body{
    width: 100%;
    height: 100%;
+   font-family: 'Lato', sans-serif;
 }
 
 .header{
+  display: flex;
+  position: absolute;
   width: 100%;
   height: 100px;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   background: black;
-  font-family: 'Lato', sans-serif;
 }
 
 .logo{
@@ -65,7 +67,8 @@ html,body{
 }
 
 .menu ul li a:after{
-  content: ' ↓ ';
+  content: url('../icons/strelka.png');
+  margin-left: 5px;
 }
 
 .hr{
@@ -105,4 +108,112 @@ html,body{
   color: white;
   text-align: center;
   font-size: 16px;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #FF7143;
+}
+
+.wel{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-bottom: 200px;
+}
+
+.wel span{
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+.wel p{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.welimg{
+  margin-right: 100px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.welimg img{
+  height: 100%;
+}
+
+.glavwel{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zvez{
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.iconzvez{
+  width: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.zvez p{
+  font-weight: bolder;
+  margin: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+
+.buttons{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons button{
+  padding: 25px;
+  border-radius: 6px;
+  font-weight: bolder;
+  border: none;
+  width: 45%;
+  font-weight: bolder;
+  transition: 500ms all;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1){
+  background: black;
+  color: white;
+}
+
+.buttons button:nth-child(1):hover{
+  background: #2A2A2A;
+}
+
+.buttons button:nth-child(2){
+  background: white;
+  color: black;
+}
+
+.buttons button:nth-child(2):hover{
+  background: #A4A4A4;
 }
