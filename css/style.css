@@ -127,7 +127,7 @@ html,body{
   height: 300px;
   justify-content: space-around;
   margin-left: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 20%;
 }
 
 .wel span{
@@ -190,6 +190,7 @@ html,body{
 }
 
 .buttons button{
+  position: relative;
   padding: 25px;
   border-radius: 6px;
   font-weight: bolder;
@@ -207,6 +208,7 @@ html,body{
 
 .buttons button:nth-child(1):hover{
   background: #2A2A2A;
+  transform:translateY(-5px);
 }
 
 .buttons button:nth-child(2){
@@ -216,4 +218,96 @@ html,body{
 
 .buttons button:nth-child(2):hover{
   background: #A4A4A4;
+    transform:translateY(-5px);
+}
+
+.smallblock{
+  width: 100%;
+  height: 30%;
+}
+
+.elements{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.textimg{
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textimg p{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.textimg span{
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.textimg img{
+  margin-left: -100px;
+  width: 65px;
+  height: 65px;
+}
+
+.druk{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drukblock{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.druktext{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.druktext > span{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.druktext > p{
+  font-size: 45px;
+  font-weight: bold;
+  width: 700px;
+}
+
+
+
+.drukimg{
+  height: 100%;
+}
+
+.drukimg img{
+  height: 100%;
 }
